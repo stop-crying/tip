@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body
+    class="bg-black xl:bg-Light-grayish-cyan xl:w-full xl:h-screen sm:bg-Light-grayish-cyan sm:w-full sm:h-fit xl:flex xl:gap-24 xl:flex-col xl:justify-center xl:items-center sm:flex sm:flex-col sm:items-center sm:justify-center sm:gap-5"
+  >
+    <h1
+      class="xl:font-charis xl:font-[500] xl:text-Very-dark-cyan xl:text-5xl xl:tracking-widest xl:uppercase sm:font-charis sm:font-[500] sm:text-Very-dark-cyan sm:text-4xl sm:tracking-widest sm:uppercase sm:pt-10"
+    >
+      Spliter
+    </h1>
+    <div
+      class="xl:w-[70%] xl:h-[60%] xl:bg-white xl:rounded-tr-[55px] xl:rounded-bl-[55px] xl:drop-shadow-xl xl:backdrop-blur-xl xl:p-16 xl:flex xl:flex-row xl:items-center xl:justify-center sm:w-full sm:p-10 sm:h-fit sm:bg-white sm:rounded-t-[40px] sm:drop-shadow-sm sm:flex sm:flex-col sm:items-center sm:gap-10"
+    >
+      <div
+        class="xl:w-[50%] xl:h-full xl:flex xl:flex-col xl:items-start xl:justify-around sm:w-full sm:h-[60%] sm:flex sm:flex-col sm:items-start sm:justify-around sm:gap-10"
+      >
+        <form
+          id="form"
+          class="xl:flex xl:flex-col xl:items-start xl:justify-center xl:w-full xl:gap-4 sm:flex sm:flex-col sm:items-start sm:justify-center sm:w-full sm:gap-3"
+        >
+          <label
+            class="xl:text-3xl xl:text-Very-dark-cyan xl:font-poppins xl:font-[700] sm:text-2xl sm:text-Very-dark-cyan sm:font-poppins sm:font-[700] sm:tracking-wider"
+            >Bill</label
+          >
+          <div class="xl:w-full xl:relative sm:w-full sm:relative">
+            <input
+              type="text"
+              name=""
+              id="billamt"
+              placeholder="0"
+              class="xl:h-[60px] sm:h-[50px] sm:bg-Very-light-grayish-cyan xl:bg-Very-light-grayish-cyan sm:w-full sm:placeholder:text-end xl:w-[80%] xl:placeholder:text-end sm:px-8 sm:text-2xl xl:px-8 xl:text-4xl sm:font-[700] sm:font-charis xl:font-[700] xl:font-charis xl:rounded-xl sm:rounded-lg sm:shadow-md sm:active:ring-2 sm:active:ring-Strong-cyan xl:active:drop-shadow-md xl:active:ring-1 xl:text-Grayish-cyan sm:text-Very-dark-cyan xl:placeholder:text-Grayish-cyan xl:ring-Strong-cyan sm:text-end xl:text-end xl:active:duration-300"
+            />
+            <img
+              src="icon-dollar.svg"
+              alt=""
+              class="xl:absolute xl:w-[20px] xl:top-0 xl:bottom-0 xl:m-auto xl:ml-9 sm:absolute sm:top-0 sm:bottom-0 sm:m-auto sm:ml-8"
+            />
+          </div>
+        </form>
+        <span
+          class="xl:flex xl:flex-col xl:w-full xl:items-start xl:gap-5 sm:flex sm:w-full sm:items-start sm:gap-3 sm:flex-col"
+        >
+          <h2
+            class="xl:text-xl xl:text-Very-dark-cyan xl:font-poppins xl:font-light sm:text-lg sm:text-Very-dark-cyan sm:font-poppins sm:font-light"
+          >
+            Select Tip %
+          </h2>
+          <div
+            class="xl:grid xl:grid-cols-3 xl:gap-4 xl:w-[70%] sm:grid sm:grid-cols-2 sm:w-full sm:gap-4"
+          >
+            <button
+              id="serviceQual"
+              value="0.05"
+              class="xl:w-auto sm:w-auto sm:h-[40px] sm:text-center sm:rounded-md sm:bg-Very-dark-cyan xl:h-[50px] xl:text-center xl:rounded-md xl:bg-Very-dark-cyan xl:text-white xl:text-3xl sm:text-white sm:text-2xl sm:font-charis sm:focus-within:bg-Strong-cyan xl:font-charis xl:hover:-translate-x-1 xl:hover:scale-105 xl:duration-200 xl:hover:bg-white xl:hover:text-Very-dark-cyan"
+            >
+              5%
+            </button>
+            <button
+              id="serviceQual"
+              value="0.1"
+              class="xl:w-auto sm:w-auto sm:h-[40px] sm:text-center sm:rounded-md sm:bg-Very-dark-cyan xl:h-[50px] xl:text-center xl:rounded-md xl:bg-Very-dark-cyan xl:text-white xl:text-3xl sm:text-white sm:text-2xl sm:font-charis sm:focus-within:bg-Strong-cyan xl:font-charis xl:hover:-translate-x-1 xl:hover:scale-105 xl:duration-200 xl:hover:bg-white xl:hover:text-Very-dark-cyan"
+            >
+              10%
+            </button>
+            <button
+              id="serviceQual"
+              value="0.15"
+              class="xl:w-auto sm:w-auto sm:h-[40px] sm:text-center sm:rounded-md sm:bg-Very-dark-cyan xl:h-[50px] xl:text-center xl:rounded-md xl:bg-Very-dark-cyan xl:text-white xl:text-3xl sm:text-white sm:text-2xl sm:font-charis sm:focus-within:bg-Strong-cyan xl:font-charis xl:hover:-translate-x-1 xl:hover:scale-105 xl:duration-200 xl:hover:bg-white xl:hover:text-Very-dark-cyan"
+            >
+              15%
+            </button>
+            <button
+              id="serviceQual"
+              value="0.2"
+              class="xl:w-auto sm:w-auto sm:h-[40px] sm:text-center sm:rounded-md sm:bg-Very-dark-cyan xl:h-[50px] xl:text-center xl:rounded-md xl:bg-Very-dark-cyan xl:text-white xl:text-3xl sm:text-white sm:text-2xl sm:font-charis sm:focus-within:bg-Strong-cyan xl:font-charis xl:hover:-translate-x-1 xl:hover:scale-105 xl:duration-200 xl:hover:bg-white xl:hover:text-Very-dark-cyan"
+            >
+              25%
+            </button>
+            <button
+              id="serviceQual"
+              value="0.5"
+              class="xl:w-auto sm:w-auto sm:h-[40px] sm:text-center sm:rounded-md sm:bg-Very-dark-cyan xl:h-[50px] xl:text-center xl:rounded-md xl:bg-Very-dark-cyan xl:text-white xl:text-3xl sm:text-white sm:text-2xl sm:font-charis sm:focus-within:bg-Strong-cyan xl:font-charis xl:hover:-translate-x-1 xl:hover:scale-105 xl:duration-200 xl:hover:bg-white xl:hover:text-Very-dark-cyan"
+            >
+              50%
+            </button>
+            <button
+              class="xl:w-auto sm:w-auto sm:h-[40px] sm:text-center sm:rounded-md sm:bg-white xl:h-[50px] xl:text-center xl:rounded-md xl:bg-white xl:text-Very-dark-cyan xl:text-3xl sm:text-Very-dark-cyan sm:focus-within:bg-Very-dark-cyan sm:focus-within:text-white sm:text-2xl sm:font-charis xl:font-charis xl:hover:-translate-x-1 xl:hover:scale-105 xl:duration-200 xl:focus-within:bg-Very-dark-cyan xl:focus-within:text-white"
+            >
+              Custom
+            </button>
+          </div>
+        </span>
+        <form
+          id="form2"
+          class="xl:flex xl:flex-col xl:items-start xl:justify-center xl:w-full xl:gap-4 sm:flex sm:flex-col sm:items-start sm:justify-center sm:w-full sm:gap-3"
+        >
+          <label
+            class="xl:text-xl xl:text-Very-dark-cyan xl:font-poppins xl:font-[700] sm:text-xl sm:text-Very-dark-cyan sm:font-poppins sm:font-light sm:tracking-wider"
+            >Number of People</label
+          >
+          <div class="xl:w-full xl:relative sm:w-full sm:relative">
+            <input
+              type="text"
+              name=""
+              id="peopleamt"
+              placeholder="0"
+              class="xl:h-[60px] sm:h-[50px] sm:bg-Very-light-grayish-cyan xl:bg-Very-light-grayish-cyan sm:w-full sm:placeholder:text-end xl:w-[80%] xl:placeholder:text-end sm:px-8 sm:text-2xl xl:px-8 xl:text-4xl sm:font-[700] sm:font-charis xl:font-[700] xl:font-charis xl:rounded-xl sm:rounded-lg sm:shadow-md sm:active:ring-2 sm:active:ring-Strong-cyan xl:active:drop-shadow-md xl:active:ring-1 xl:text-Grayish-cyan sm:text-Very-dark-cyan xl:placeholder:text-Grayish-cyan xl:ring-Strong-cyan sm:text-end xl:text-end xl:active:duration-300"
+            />
+            <img
+              src="icon-person.svg"
+              alt=""
+              class="xl:absolute xl:w-[20px] xl:top-0 xl:bottom-0 xl:m-auto xl:ml-9 sm:absolute sm:top-0 sm:bottom-0 sm:m-auto sm:ml-8"
+            />
+          </div>
+        </form>
+        <button
+          id="calculate"
+          class="xl:w-[50%] xl:h-[60px] sm:w-full sm:h-[50px] sm:bg-Strong-cyan sm:text-center sm:text-xl sm:font-charis sm:rounded-lg sm:drop-shadow-sm sm:focus-within:ring-2 sm:focus-within:ring-black sm:text-white xl:bg-Strong-cyan xl:text-center xl:text-white xl:text-3xl xl:font-charis xl:font-light xl:rounded-xl xl:focus:ring-1 xl:focus:ring-Very-dark-cyan"
+        >
+          Generate Tip
+        </button>
+      </div>
+      <div
+        class="xl:w-[50%] sm:w-full sm:h-fit sm:flex sm:flex-col sm:items-start sm:justify-around sm:rounded-[20px] sm:bg-Very-dark-cyan xl:h-full sm:gap-10 xl:flex xl:flex-col xl:items-start xl:justify-around xl:rounded-[50px] xl:bg-Very-dark-cyan xl:p-16 sm:p-8"
+      >
+        <span
+          class="xl:flex xl:items-center xl:justify-between xl:w-full sm:flex sm:items-center sm:justify-between sm:w-full"
+        >
+          <div
+            class="xl:flex xl:flex-col xl:items-start xl:justify-center xl:gap-1 sm:flex sm:flex-col sm:items-start sm:justify-center sm:gap-0"
+          >
+            <p
+              class="xl:text-white xl:font-charis xl:text-2xl xl:tracking-wider sm:text-white sm:font-charis sm:text-xl sm:tracking-wider"
+            >
+              Tip Amount
+            </p>
+            <p
+              class="xl:text-xl xl:text-Grayish-cyan xl:font-charis sm:text-lg sm:text-Grayish-cyan sm:font-charis"
+            >
+              / person
+            </p>
+          </div>
+          <aside
+            class="xl:flex xl:items-center xl:justify-center xl:gap-2 sm:flex sm:items-center sm:justify-center sm:gap-1"
+          >
+            <p
+              class="xl:text-4xl xl:text-Strong-cyan xl:font-poppins xl:font-[700] sm:text-3xl sm:text-Strong-cyan sm:font-poppins sm:font-[700]"
+            >
+              $
+            </p>
+            <p
+              id="tip"
+              class="xl:text-6xl xl:text-Strong-cyan xl:font-poppins xl:font-[700] sm:text-5xl sm:text-Strong-cyan sm:font-poppins sm:font-[700]"
+            >
+              0.00
+            </p>
+          </aside>
+        </span>
+
+        <span
+          class="xl:flex xl:items-center xl:justify-between xl:w-full sm:flex sm:items-center sm:justify-between sm:w-full"
+        >
+          <div
+            class="xl:flex xl:flex-col xl:items-start xl:justify-center xl:gap-1 sm:flex sm:flex-col sm:items-start sm:justify-center sm:gap-0"
+          >
+            <p
+              class="xl:text-white xl:font-charis xl:text-2xl xl:tracking-wider sm:text-white sm:font-charis sm:text-xl sm:tracking-wider"
+            >
+              Total
+            </p>
+            <p
+              class="xl:text-xl xl:text-Grayish-cyan xl:font-charis sm:text-lg sm:text-Grayish-cyan sm:font-charis"
+            >
+              / person
+            </p>
+          </div>
+          <aside
+            class="xl:flex xl:items-center xl:justify-center xl:gap-2 sm:flex sm:items-center sm:justify-center sm:gap-1"
+          >
+            <p
+              class="xl:text-4xl xl:text-Strong-cyan xl:font-poppins xl:font-[700] sm:text-3xl sm:text-Strong-cyan sm:font-poppins sm:font-[700]"
+            >
+              $
+            </p>
+            <p
+              id="tips"
+              class="xl:text-6xl xl:text-Strong-cyan xl:font-poppins xl:font-[700] sm:text-5xl sm:text-Strong-cyan sm:font-poppins sm:font-[700]"
+            >
+              0.00
+            </p>
+          </aside>
+        </span>
+        <button
+          id="reset"
+          class="xl:w-[50%] xl:h-[60px] sm:w-full sm:h-[50px] sm:bg-Strong-cyan sm:text-center sm:text-xl sm:font-charis sm:rounded-lg sm:drop-shadow-sm sm:focus-within:ring-2 sm:focus-within:ring-black sm:text-white xl:bg-Strong-cyan xl:text-center xl:text-white xl:text-3xl xl:font-charis xl:font-light xl:rounded-xl xl:focus:ring-1 xl:focus:ring-Very-dark-cyan"
+        >
+          RESET
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //Calculate Tip
+      function calculateTip() {
+        var billAmt = document.getElementById("billamt").value;
+        var serviceQual = document.getElementById("serviceQual").value;
+        var numOfPeople = document.getElementById("peopleamt").value;
+
+        //Calculate tip
+        var total = (billAmt * serviceQual) / numOfPeople;
+        //round to two decimal places
+        total = Math.round(total * 100) / 100;
+        //next line allows us to always have two digits after decimal point
+        total = total.toFixed(2);
+        //Display the tip
+
+        var tot = total * numOfPeople;
+        tot = tot.toFixed(2);
+
+        document.getElementById("tip").innerHTML = total;
+        document.getElementById("tips").innerHTML = tot;
+      }
+
+      //Hide the tip amount on load
+
+      //click to call function
+      document.getElementById("calculate").onclick = function () {
+        calculateTip();
+      };
+
+      function newFunction() {
+        var element1 = document.getElementById("form");
+        var element2 = document.getElementById("form2");
+
+        element1.reset();
+        element2.reset();
+      }
+
+      document.getElementById("reset").onclick = function () {
+        newFunction();
+      };
+    </script>
+  </body>
+</html>
